@@ -12,24 +12,36 @@ package javaapplication2;
 public class Main {
     
     public static void main(String[] args) {
-        
-        
-        // CREACION E INICIALIZACION DE VARIABLE
-        Cuaderno cuaderno1 = new Cuaderno("rosado");
-           
-        Cuaderno cuarderno2 = new Cuaderno("rosado", 10.0);
-        // LLENANDO SUS ATRIBUTOS
-        
-        cuaderno1.ancho = 10.0;
-        cuaderno1.alto = 8.0;
-        cuaderno1.largo = 20.0;
-        cuaderno1.cantidadHojas = 160;
-        
-        System.out.println(cuaderno1.color);
-        
-        System.out.println(cuarderno2.largo);
-        
-        
-        
+        imprimeEdad(26);
+    }
+    
+    public static void imprimir(String mensaje){
+        System.out.println("Voy a imprir el mensaje ......");
+        System.out.println("Este es mi mensaje: " + mensaje);
+    }
+    
+    public static void imprimeEdad(int edad){
+        System.out.println("Mi edad es: " + edad);
+    }
+    
+    public static boolean eresMayorDeEdad(int edad){
+        boolean valor = edad>=18;
+        return valor; 
+    }
+    
+    public static boolean esPar(int numero){
+        int residuo = numero%2;
+        boolean resultado = residuo == 0;
+        return resultado;
+    }
+    
+    public static double areaCirculo(double radio){
+        double resultado = 3.1416*radio*radio;
+        return resultado;
+    }
+    
+    public static void imprimirArea(double radio){
+        double resultado = 3.1416*radio*radio;
+        System.out.println("El area es: " + resultado);
     }
 }
